@@ -1,5 +1,5 @@
 using Grpc.Core;
-using MS.Application;
+using MS.Contracts.Grpc;
 
 namespace MS.Application.Services
 {

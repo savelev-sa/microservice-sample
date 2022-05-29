@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "MS.Application";
+option csharp_namespace = "MS.Contracts.Grpc";
 
 package greet;
 
