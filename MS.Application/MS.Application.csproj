@@ -12,9 +12,11 @@
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.40.0" />
     <PackageReference Include="Grpc.AspNetCore.Web" Version="2.46.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.1" />
+    <PackageReference Include="protobuf-net.Grpc.AspNetCore" Version="1.0.152" />
   </ItemGroup>
-	<ItemGroup>
-		<Protobuf Include="..\MS.Contracts.Grpc\Protos\greet.proto" GrpcServices="Server" />
-	</ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\Core\MS.Core\MS.Core.csproj" />
+    <ProjectReference Include="..\MS.Domain\MS.Domain.csproj" />
+</ItemGroup>
 </Project>
